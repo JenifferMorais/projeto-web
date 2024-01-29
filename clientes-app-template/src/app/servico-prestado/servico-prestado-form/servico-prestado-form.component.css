@@ -1,0 +1,14 @@
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: block;
+    box-sizing: border-box;
+}
+
+.modal-footer {
+    padding: 0px !important;
+    padding-bottom: 25% !important;
+    border-top: none !important;
+}
