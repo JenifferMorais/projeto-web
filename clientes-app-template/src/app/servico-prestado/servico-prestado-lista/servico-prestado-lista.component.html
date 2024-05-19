@@ -58,7 +58,7 @@
               <th>Descrição</th>
               <th>Preço</th>
               <th>Data</th>
-              <th><button class="inserir-button" routerLink="/servico-prestado-form">Inserir
+              <th><button class="inserir-button" routerLink="/servico-prestado/form">Inserir
                 <i class="fa fa-plus"></i>
             </button></th>
             </tr>
@@ -70,7 +70,7 @@
               <td>{{ servico.valor }}</td>
               <td>{{ servico.data }}</td>
               <td>
-                <button class="button-editar" routerLink="/servico-prestado-form/{{ servico.id }}"> <i class="fa fa-edit" ></i> Editar</button>
+                <button class="button-editar" routerLink="/servico-prestado/form/{{ servico.id }}"> <i class="fa fa-edit" ></i> Editar</button>
                 <button class="button-excluir" data-toggle="modal" data-target="#modalDelecao" (click)="preparaDelecao(servico)"> <i class="fa fa-trash"></i> Excluir</button>
               </td>
             </tr>

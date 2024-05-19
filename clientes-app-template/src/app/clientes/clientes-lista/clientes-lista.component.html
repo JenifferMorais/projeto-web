@@ -33,7 +33,7 @@
               <td>{{ cliente.nome }}</td>
               <td>{{ cliente.cpf }}</td>
               <td>
-                <button class="button-editar" routerLink="/clientes-form/{{ cliente.id }}"> <i class="fa fa-edit" ></i> Editar</button>
+                <button class="button-editar" routerLink="/clientes/form/{{ cliente.id }}"> <i class="fa fa-edit" ></i> Editar</button>
                 <button class="button-excluir" data-toggle="modal" data-target="#modalDelecao" (click)="preparaDelecao(cliente)"> <i class="fa fa-trash"></i> Excluir</button>
               </td>
             </tr>
