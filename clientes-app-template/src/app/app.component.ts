@@ -9,6 +9,4 @@ import jQuery from 'jquery'
 })
 export class AppComponent {
   title = 'clientes-app';
-
-  
 }

@@ -1,0 +1,51 @@
+.circle-check-container {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle-check {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .label {
+    margin-left: 8px;
+  }
+  
+  .circle-check svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .circle-check svg path {
+    transition: opacity 0.3s ease;
+  }
+  
+  .circle-check svg path.ng-hide {
+    opacity: 0;
+  }
+  
+  .circle-check circle {
+    fill: none;
+    stroke-width: 2;
+  }
+  
+  .circle-check circle.checked {
+    stroke: green;
+  }
+  
+  .circle-check circle.unchecked {
+    stroke: gray;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens horizontalmente ao final (à direita) */
+    align-items: center;
+  }
+  
+  .check-space{
+    margin-right: 35px;
+  }

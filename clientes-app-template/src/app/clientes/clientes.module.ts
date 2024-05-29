@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { ClientesRoutingModule } from './clientes-routing.module';
 import { ClientesFormComponent } from './clientes-form/clientes-form.component';
 import { ClientesListaComponent } from './clientes-lista/clientes-lista.component';
+import { CircleCheckModule } from '../circle-check/circle-check.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ClientesListaComponent } from './clientes-lista/clientes-lista.componen
   imports: [
     CommonModule,
     ClientesRoutingModule,
-    FormsModule
+    FormsModule,
+    CircleCheckModule
   ],exports: [
     ClientesFormComponent,
     ClientesListaComponent

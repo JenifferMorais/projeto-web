@@ -6,8 +6,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-clientes-lista',
-  templateUrl: './clientes-lista.component.html',
-  styleUrls: ['./clientes-lista.component.css']
+  templateUrl: 'clientes-lista.component.html',
+  styleUrls: ['clientes-lista.component.css']
 })
 export class ClientesListaComponent implements OnInit {
   clienteSelecionado: Cliente;
@@ -15,6 +15,7 @@ export class ClientesListaComponent implements OnInit {
   alerta: boolean = false;
   mensagemAlerta: string;
   erros: String[];
+  isChecked: boolean = false;
 
   constructor(private service : ClientesService, private mensagem: MensagemService, private router: Router,  private mensagens: MensagemService) { 
   }
@@ -64,4 +65,8 @@ export class ClientesListaComponent implements OnInit {
     this.time();
   }
 
+  handleCheckChange(isChecked: boolean) {
+    this.isChecked = isChecked;
+    console.log('isChecked:', this.isChecked);
+  }
 }

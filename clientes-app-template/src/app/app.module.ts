@@ -14,6 +14,11 @@ import { ServicoPrestadoModule } from './servico-prestado/servico-prestado.modul
 import { ServicoPrestadoService } from './servico-prestado.service';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
+import { TooltipModule } from './tooltip/tooltip.module';
+import { CircleCheckComponent } from './circle-check/circle-check.component';
+import { CircleCheckModule } from './circle-check/circle-check.module';
+import { ClientesListaComponent } from './clientes/clientes-lista/clientes-lista.component';
+import { ClientesFormComponent } from './clientes/clientes-form/clientes-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,9 @@ import { LayoutComponent } from './layout/layout.component';
     TemplateModule,
     ClientesModule,
     ServicoPrestadoModule,
-    FormsModule
+    FormsModule,
+    TooltipModule,
+    CircleCheckModule,
   ],
   providers: [
     ClientesService,
@@ -37,4 +44,6 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

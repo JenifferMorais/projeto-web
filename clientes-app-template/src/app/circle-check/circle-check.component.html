@@ -1,0 +1,10 @@
+<div class="circle-check-container">
+    <div class="circle-check" (click)="toggleChecked($event)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="gray" stroke-width="2"/>
+        <path *ngIf="isChecked" fill="green" d="M9 16.2l-4.6-4.6L3 13l6 6 12-12-1.4-1.4L9 16.2z"/>
+        </svg>
+    </div>
+        <span class="label" text--bold>Visualizar últimos 3 anos</span>
+        <app-tooltip text="This is a tooltip"></app-tooltip>
+</div>
