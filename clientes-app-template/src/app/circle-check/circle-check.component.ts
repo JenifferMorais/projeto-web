@@ -7,8 +7,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class CircleCheckComponent {
   isChecked: boolean = false;
   @Output() isCheckedChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+
   toggleChecked(event: Event) {
-    // event.stopPropagation(); 
+     event.stopPropagation(); 
     this.isChecked = !this.isChecked;
     this.isCheckedChange.emit(this.isChecked);
   }
